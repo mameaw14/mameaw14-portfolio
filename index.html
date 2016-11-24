@@ -70,6 +70,35 @@
         font-weight: 400;
         font-size: 0.7em;
       }
+      #backtotop {
+        position: fixed;
+        bottom: 2%;
+        right: 5%;
+        max-width: 15%;
+
+        animation-name: balloon;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+
+        -webkit-animation-name: balloon;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-direction: alternate;
+
+      }
+      #backtotop > img {
+        width: 100%;
+      }
+      @keyframes balloon {
+        from {bottom: 2%;}
+        to {bottom: 3%;}
+      }
+      @-webkit-keyframes balloon {
+        from {bottom: 2%;}
+        to {bottom: 3%;}
+      }
+
     </style>
   </head>
   <body>
@@ -96,6 +125,8 @@
           #photoshop <br>
           #programming <br>
           &nbsp&nbsp&nbsp&nbspc++ / python / java <br>
+          #php <br>
+          #bootstrap <br>
           #wordpress <br>
           #codeigniter <br>
           #nodejs <br>
@@ -105,6 +136,20 @@
       </div>
     </div>
     <div class="showcase">
+      <div class="work">
+        <img src="img/oricon.png">
+        <p>
+          wordpress site <br>
+          <a href="http://oricon.in.th/" target="_blank">oricon.in.th</a>
+        </p>
+      </div>
+      <div class="work">
+        <img src="img/thailandweather.png">
+        <p>
+          Twitter bot <br>
+          <a href="https://twitter.com/thailandtemp" target="_blank">@ThailandTemp</a>
+        </p>
+      </div>
       <div class="work">
         <img src="img/cpsk.png">
         <p>
@@ -116,20 +161,7 @@
         <img src="img/weka.png">
         <p>webapp project</p>
       </div>
-      <div class="work">
-        <img src="img/thailandweather.png">
-        <p>
-          Twitter bot <br>
-          <a href="https://twitter.com/thailandtemp" target="_blank">@ThailandTemp</a>
-        </p>
-      </div>
-      <div class="work">
-        <img src="img/oricon.png">
-        <p>
-          wordpress site <br>
-          <a href="http://oricon.in.th/" target="_blank">oricon.in.th</a>
-        </p>
-      </div>
     </div>
+      <a href="#" id="backtotop"><img src="img/balloon.png"></a>
   </body>
 </html>
