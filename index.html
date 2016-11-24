@@ -15,8 +15,8 @@
       }
       #title {
         font-family: 'Monoton', cursive;
-        font-size: 9em;
         font-weight: 400;
+        margin-top: 100px;
       }
       a {
         color: #0FF;
@@ -45,21 +45,45 @@
       }
       .container {
         display: flex;
+        flex-wrap: wrap;
       }
       .item {
         flex-grow: 1;
+      }
+      .showcase {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .work {
+        padding-top: 40px;
+        text-align: center;
+      }
+      .work > p {
+        font-weight: 600;
+        font-size: 1.2em;
+      }
+      .work > img {
+        max-width: 70%;
+      }
+      .work > p > a {
+        font-weight: 400;
+        font-size: 0.7em;
       }
     </style>
   </head>
   <body>
     <div id="top-box">มม.</div>
-    <div id="title">MAMEAW14</div>
-    <div id="name">Pinyaporn Eiammongkol</div>
+     <svg id="title" viewBox="0 0 135 20" >
+      <text x="0" y="50%" fill="#FF3" text-anchor="start" dy=".35em">MAMEAW14</text>
+    </svg> 
+    <div id="name">Pinyaporn &nbspEiammongkol</div>
     <a class="big-font" href="https://github.com/mameaw14" target="_blank">https://github.com/mameaw14</a>
     <div class="container">
       <div class="item">
         <ul style="list-style-type:square;">
-          <li>นักเรียนโครงการโอลิมปิกวิชาการ วิชาคอมพิวเตอร์</li>
+          <li>studying <b>Computer Engineering</b> at <b>Kasetsart University</b></li>
+          <li>เหรียญเงิน คอมพิวเตอร์โอลิมปิกระดับชาติ (TOI10)</li>
           <li>เด็กค่าย JWC#6 Marketing</li>
           <li>พี่ค่าย JWC#7</li>
           <li><b>internship</b> @enterdock</li>
@@ -67,6 +91,44 @@
       </div>
       <div class="item">
         <b>skill</b>
+        <p>
+          #design <br>
+          #photoshop <br>
+          #programming <br>
+          &nbsp&nbsp&nbsp&nbspc++ / python / java <br>
+          #wordpress <br>
+          #codeigniter <br>
+          #nodejs <br>
+          #express <br>
+
+        </p>
+      </div>
+    </div>
+    <div class="showcase">
+      <div class="work">
+        <img src="img/cpsk.png">
+        <p>
+          CPSK Database <br>
+          <a href="https://pirun.ku.ac.th/~b5810500137/index.php/" target="_blank">link</a>
+        </p>
+      </div>
+      <div class="work">
+        <img src="img/weka.png">
+        <p>webapp project</p>
+      </div>
+      <div class="work">
+        <img src="img/thailandweather.png">
+        <p>
+          Twitter bot <br>
+          <a href="https://twitter.com/thailandtemp" target="_blank">@ThailandTemp</a>
+        </p>
+      </div>
+      <div class="work">
+        <img src="img/oricon.png">
+        <p>
+          wordpress site <br>
+          <a href="http://oricon.in.th/" target="_blank">oricon.in.th</a>
+        </p>
       </div>
     </div>
   </body>
